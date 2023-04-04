@@ -13,6 +13,9 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths":{"my-lib": [
+      "./node_modules/my-libsh"
+    ]},
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
@@ -22,8 +25,9 @@
       "es2020",
       "dom"
     ]
+
   },
-  "angularCompilerOptions": {
+ "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
