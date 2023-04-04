@@ -17,7 +17,7 @@ posts:Post[]=[];
   }
 
   ngOnInit(): void {
-this.getposts();
+    this.getposts();
   }
 
   getposts():any{

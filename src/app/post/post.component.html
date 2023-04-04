@@ -1,3 +1,22 @@
 <p>post works!</p>
+<div>
 Enter Post ID: <input type="text"  [(ngModel)]="post.id"/>
 <input type="submit" (click)="delete(post.id)" value="delete"/>
+</div>
+<div>
+<table border="1" [cellPadding]="10" [cellSpacing]="10">
+    <tr>
+        <td>ID</td>
+        <td>Title</td>
+        <td>Body</td>
+    </tr>
+    <tr *ngFor="let i of posts">
+        <td>{{i.id}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.body}}</td>
+
+    </tr>
+
+</table>
+</div>
+

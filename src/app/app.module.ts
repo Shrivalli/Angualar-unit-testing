@@ -7,21 +7,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
 import {HttpClientModule} from '@angular/common/http';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostComponent
+    PostComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MyLibModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    HttpClientTestingModule
         
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

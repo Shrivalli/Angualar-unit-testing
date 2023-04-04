@@ -13,7 +13,8 @@ export class PostService {
 
   getposts()
   {
-    return this.http.get<Post[]>('https://jsonplaceholder.typicode.com/posts');
+    //return this.http.get<Post[]>('https://jsonplaceholder.typicode.com/posts');
+    return this.http.get<Post[]>('https://localhost:7015/api/Posts/');
   }
   
  addpost(post:Post)
